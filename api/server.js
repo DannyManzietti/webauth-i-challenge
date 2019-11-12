@@ -18,7 +18,7 @@ const sessionConfiguration = {
     secure: process.env.NODE_ENV === "development" ? false : true, 
   },
   resave: false, 
-  saveUninitialized: true, 
+  saveUninitialized: true , 
   store: new KnexSessionStorage({
     knex: knexConnection,
     clearInterval: 1000 * 60 * 10, 
